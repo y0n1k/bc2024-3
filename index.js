@@ -4,7 +4,7 @@ const fs = require('fs');
 const program = new Command();
 
 program
-  .requiredOption('-i, --input <path>', 'шлях до файлу для читання')
+  .option('-i, --input <path>', 'шлях до файлу для читання')
   .option('-o, --output <path>', 'шлях до файлу для запису результату')
   .option('-d, --display', 'вивести результат в консоль');
 
